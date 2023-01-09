@@ -9,18 +9,36 @@
 
 
 
-function first() {
-  let x = 10;
 
-  function second() {
+
+function first(){
+  let x = 10;
+  function second (){
     let y = 30;
-    x + y;
+    return x + y;
   }
-  
-  return second //함수 결과값이 아닌, 함수 자체를 리턴
+  return second
 }
 
-const user = first()
+
+
+const value = first();
+
+
+// 전역의 오염을 막기 위해 
+
+function number(){
+  let count = 0;
+
+  return ()=> ++count
+}
+
+const counter = number();
+
+
+
+// console.log(count);
+
 
 // 모든 함수에는 실행 컨텍스트가 있습니다. 실행 컨텍스트는 해당 함수 내의 변수와 
 // 해당 부모 환경에 대한 참조를 의미하는 환경으로 구성됩니다. 상위 환경에 대한 참조는 
