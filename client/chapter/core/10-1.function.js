@@ -53,7 +53,7 @@
 
 // rem(pxValue: number|string, base: number):string;
 
-function rem(pxValue, base = 16) {
+/* function rem(pxValue, base = 16) {
   return parseInt(pxValue)/base + 'rem'
 }
 
@@ -65,10 +65,24 @@ console.assert(rem(20) === '1.25rem')
 
 // css(node: string, prop: string, value: number|strung) : string;
 let css;
+ */
 
 
+function rem(pxValue, base) {
+  //   typeof pxValue === "string" && (pxValue = parseInt(pxValue, 10));
 
+  if (typeof pxValue === "string") {
+    parseInt(pxValue, 10); // 뒤에 10 은 10진수
+  }
 
+  // typeof base === "string" && (base = parseInt(base, 10));
+  if (typeof base === "string") {
+    parseInt(base, 10); // 뒤에 10 은 10진수
+  }
+  return ${pxValue / base}rem;
+}
+
+console.log(rem("25rem", "10"));
 
 // node의 값을 'h1'으로 받았을 경우 
 
