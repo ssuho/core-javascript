@@ -2,25 +2,35 @@
 /* Comparison Operator                                                    */
 /* ---------------------------------------------------------------------- */
 
-const numbers = [10, -4, 3, 90, 101, 234, -10_000]
+
+ 
+
+
+const number = [10,-4,3,90,101,234,-10_000]
+
 
 // ~ 보다 큼 또는 작음 → boolean
-let lessThen = numbers[0] < numbers[3];
-let greaterThen  = numbers[0] > numbers[3];
+let lessThen = number[0] < number[3];
+
+// console.log(lessThen);
+
+let greaterThen= number[0] > number[3];
 
 // ~ 보다 크거나 작음 또는 같음 → boolean
-let lessThenAndEqual = numbers[0] <= numbers[3];
-let greaterThenAndEqual = numbers[0] >= numbers[3];
+let lessThenAndEqual = number[0] <= number[3];
+let greaterThenAndEqual = number[0] >= number[3];
 
 // 동등(등급이나 정도가 같다) → boolean
-let equal  = numbers[0] == numbers[3];
+let equal = number[0] == number[3];
 
 // 다름(같지 않음) → boolean
-let inequal  = numbers[0] != numbers[3];
+let inequal = number[0] != number[3];
 
 // 동일(똑같다) → boolean
-let same = numbers[0] === numbers[3];
+let same = number[0] === number[3];
 
+
+// !==
 
 // 문자 비교
 // 사전편집(lexicographical) 순
@@ -41,3 +51,16 @@ let same = numbers[0] === numbers[3];
 
 console.log('Design' <= 'Development');
 console.log('디자인' <= '개발');
+
+
+
+
+
+
+
+
+
+
+
+
+

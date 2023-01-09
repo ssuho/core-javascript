@@ -7,7 +7,7 @@ const portableFan = {
   maker: 'fromB',
   brand: 'FD221',
   type: 'neckband',
-  photos: {
+  photo: {
     static: 'https://bit.ly/3OS50UD',
     animate: 'https://bit.ly/3P8646q'
   },
@@ -37,3 +37,53 @@ console.log(portableFan?.photos?.animate);
 
 
 // 객체의 프로퍼티 접근 시, 옵셔널 체이닝을 사용해봅니다.
+
+
+
+
+// 타이머 
+setTimeout(()=>{
+  
+  const button = /* html */`
+    <button type="button">click me!</button>
+  `
+
+  document.body.insertAdjacentHTML('beforeend',button);
+
+},3000)  // ms 
+
+
+document.querySelector('button')?.addEventListener('click',function(){
+  console.log('hit');
+})
+
+
+
+// 반복 타이머 
+// setInterval(() => {
+//   console.log('난 인터벌이야');
+// }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

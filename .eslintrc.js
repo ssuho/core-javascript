@@ -12,8 +12,6 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        "rules": {
-            "no-unused-vars": ["off", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
-        }
+        "no-unused-vars":'off'
     }
 }
